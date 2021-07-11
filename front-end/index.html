@@ -8,7 +8,7 @@
        */
       window.GLOBAL_CONFIG = {
         SCF_GATEWAY: "https://cdn.cdnnn.workers.dev",
-        SITE_NAME: "FODI",
+        SITE_NAME: "",
         IS_CF: true,
       };
       if (window.GLOBAL_CONFIG.SCF_GATEWAY.indexOf("workers") === -1) {
@@ -1203,8 +1203,8 @@
                   window.api.url + "?file=" + encodeURI(path)
                 );
                 const btn = document.querySelector(".btn.quote");
-                btn.innerHTML = "已复制";
-                setTimeout(() => (btn.innerHTML = "引用"), 250);
+                btn.innerHTML = "copied";
+                setTimeout(() => (btn.innerHTML = "link"), 250);
               });
             document
               .querySelector(".btn.share")
@@ -1604,7 +1604,7 @@
             <div class="info">
               <div class="file-name"></div>
               <div class="btn download">downl</div>
-              <div class="btn quote">引用</div>
+              <div class="btn quote">link</div>
               <div class="btn share">分享</div>
             </div>
             <div class="content"></div>
